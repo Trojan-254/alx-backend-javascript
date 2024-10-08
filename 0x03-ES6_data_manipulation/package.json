@@ -2,7 +2,7 @@
   "name": "0x03-es6_data_manipulation",
   "version": "1.0.0",
   "description": "Arrays ES6",
-  "main": "0-main.js",
+  "main": "1-main.js",
   "scripts": {
     "test": "jest",
     "lint": "eslint .",
