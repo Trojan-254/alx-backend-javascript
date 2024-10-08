@@ -1,0 +1,28 @@
+{
+  "name": "0x03-es6_data_manipulation",
+  "version": "1.0.0",
+  "description": "Arrays ES6",
+  "main": "0-main.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint .",
+    "full-test": "lint && test",
+    "dev": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "alx-backend-javascript"
+  },
+  "type": "module",
+  "author": "Samwuel simiyu",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.25.7",
+    "@babel/preset-env": "^7.25.7",
+    "@eslint/js": "^9.12.0",
+    "babel-jest": "^29.7.0",
+    "eslint": "^9.12.0",
+    "globals": "^15.10.0",
+    "inquirer": "^12.0.0"
+  }
+}
