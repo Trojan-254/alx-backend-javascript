@@ -9,9 +9,17 @@ export class HolbertonClass {
   get year() {
     return this._year;
   }
+  
+  set year(value) {
+    return this._year = value;
+  }
 
   get location() {
     return this._location;
+  }
+
+  set location(value) {
+    return this._location = value;
   }
 }
 
@@ -32,7 +40,7 @@ export class StudentHolberton {
   }
 
   get holbertonClass() {
-    return this._holbertonClass;
+    return this.holbertonClass;
   }
 
   get fullStudentDescription() {
@@ -45,7 +53,6 @@ const student2 = new StudentHolberton('John', 'Doe', class2020);
 const student3 = new StudentHolberton('Albert', 'Clinton', class2019);
 const student4 = new StudentHolberton('Donald', 'Bush', class2019);
 const student5 = new StudentHolberton('Jason', 'Sandler', class2019);
-
 
 
 export const listOfStudents = [student1, student2, student3, student4, student5];
