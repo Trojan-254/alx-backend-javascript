@@ -1,43 +1,30 @@
-#!/usr/bin/node
-/**
-** module for  Pricing
-*/
-
-import Currency from "./3-currency.js";
-
 export default class Pricing {
-   constructor(amount, currency) {
-      this._amount = amount;
-      this._currency = currency;
-   }
+  constructor(amount, currency) {
+    this._amount = amount;
+    this._currency = currency;
+  }
 
-   get amount() {
-      return this._amount;
-   }
+  get amount() {
+    return this._amount;
+  }
 
-   set amount(value) {
-      if (typeof value !== "number") {
-         throw new TypeError("Value must be number");
-      }
-      return this._amount = value;
-   }
+  set amount(a) {
+    this._amount = a;
+  }
 
-   get currency() { 
-      return this._amount;
-   }
+  get currency() {
+    return this._currency;
+  }
 
-   set currency(value) {
-      if (!(value instanceof Currency)) {
-         throw new TypeError("Value must be a string");
-      }
-      return this._currency = value;
-   }
+  set currency(c) {
+    this._currency = c;
+  }
 
-   displayFullPrice() {
-      return `${this._amount} ${this._currency.displayFullCurrency()}`;
-   }
+  displayFullPrice() {
+    return `${this.amount} ${this.currency._name} (${this.currency._code})`;
+  }
 
-   static convertPrice(amount, conversionRate) {
-      return amount * conversionRate;
-   }
+  static convertPrice(amount, conversionRate) {
+    return (amount * conversionRate);
+  }
 }
