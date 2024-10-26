@@ -1,5 +1,3 @@
-#!/usr/bin/node
-
-export default function(students, city) {
-   return students.filter((students) => students.location == city);
+export default function getStudentsByLocation(list, city) {
+  return list.filter((obj) => obj.location === city);
 }
