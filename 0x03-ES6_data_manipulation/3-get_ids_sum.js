@@ -1,6 +1,3 @@
-#!/usr/bin/node
-
-export default function(students) {
-   const ids = students.map(students => students.id)
-   return ids.reduce((acc, current) => acc + current);
+export default function getStudentIdsSum(list) {
+  return list.reduce((sum, student) => sum + student.id, 0);
 }
